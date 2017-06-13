@@ -17,6 +17,15 @@ Developer @GA in NYC
      box-sizing: border-box; /* IE */
 }
 
+/*
+html {
+  background: url(images/header_bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
+
 /* Clear fix hack */
 .clearfix:after {
      content: ".";
@@ -70,12 +79,23 @@ Developer @GA in NYC
 
 }
 
-header {background: url(../images/header_bg.jpg);
+header {
+  background: url(../images/header_bg.jpg);
+  background-position: center;
+  background-size: cover; /* allows image to take over whole area rather than tiled image*/
+  background-repeat: repeat-n;
+  padding: 0;
+  min-width: 100%;
+  height: 40vh;
+  text-align: center;
+}
 
+body {
+  font-family: 'Open Sans';
 }
 
 h1 {
-  font-family: 'Open Sans', serif;
+  text-align: left;
   font-weight: 900;
   font-size: 24px;
   color: white;
@@ -84,41 +104,81 @@ h1 {
 }
 
 h2 {
-  font-family: 'Open Sans', serif;
   font-weight: 600;
   font-size: 24px;
   color: white;
-  text-align: center;
   padding: 25px 0px;
 }
 
+
 .button {
-    
-    align-content: center;
-    display: block;
     width: 115px;
     height: 30px;
-    background: yellow;
+    background: #f9e42e;
     border-radius: 5px;
     padding: 10px;
-    font-family: 'Open Sans', serif;
     font-weight: 900;
     font-size: 14px;
     color: #033048;
-    text-align: center;
     /*text-decoration: none removes underline from link*/
     text-decoration: none;
 }
 
+.benefits {
+  background-color: #f0efef;
+  height: 45vh;
+  width: 100%;
+  text-align: left;
+  text-indent: 50px;
+
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #033048;
+  padding: 25px 0px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 13px;
+  color: #606161;
+}
+
+ul {
+  list-style: disc;
+  list-style-position: inside;
+  font-weight: 400;
+  font-size: 13px;
+  color: #606161;
+}
+
+li {
+  margin-top: 5px;
+}
+
 a {
-
 }
 
 
-
-footer {
-
+.testimonial {
+  background: url(../images/testimonial_bg.jpg);
+  background-size: cover;
+  height: 45vh;
+  width: 100%;
+  text-align: center;
 }
+
+blockquote {
+  color: white;
+  padding: 50px 200px;
+  font-style: italic;
+}
+
+button_sign-up {}
+
+footer {}
 
 /******************************************
 /* ADDITIONAL STYLES
